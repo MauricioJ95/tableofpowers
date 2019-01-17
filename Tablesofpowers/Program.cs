@@ -17,17 +17,16 @@ namespace Tablesofpowers
                 Console.WriteLine("please enter a number");
                 string userNum = Console.ReadLine();
                 n = int.Parse(userNum);
-                Console.WriteLine("\tNumber\tSquare\tCube"); //lining up the numbers, squares, and cubes with \t
+                Console.WriteLine("\tNumber\tSquare\tCube"); 
                 Console.WriteLine("\t=======\t=======\t======");
-                for (int number = 1; number <= n;//number is 1; number is less than or equal to n; n++(n+1)
-                    number++)
+                for (int number = 1; number <= n; number++)
                 {
-                    square = number * number;//the equation for squares
-                    cube = square * number;//the equation for cubes
-                    Console.WriteLine("\t{0}\t{1}\t{2}", number, square, cube);//making sure they stay in that order of numbers,squares, and cubes
+                    square = number * number;
+                    cube = square * number;
+                    Console.WriteLine("\t{0}\t{1}\t{2}", number, square, cube);
                 }
                 Console.WriteLine("Continue? y/n");
-                input = Console.ReadLine();//continue y/n
+                input = Console.ReadLine();
             } while (input == "y");
         }
     }
